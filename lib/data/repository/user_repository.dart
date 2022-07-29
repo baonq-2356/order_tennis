@@ -1,5 +1,6 @@
-import '../model/user_model.dart';
+import 'package:order_tennis/data/remote/response/login_response.dart';
 
 abstract class UserRepository {
-  Future<UserModel> login();
+
+  Future<LoginResponse> login(String username, String password);
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../resouces/strings.dart';
+import '../../data/resources/strings.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -54,7 +54,7 @@ class LoginScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16,),
               ElevatedButton(
-                  onPressed: () { Navigator.pushNamed(context, Strings.schedulerScreen); },
+                  onPressed: () { Navigator.pushNamed(context, schedulerScreen); },
                   child: const Text(
                       "Login"
                   ),
